@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    /* background: url('/images/nitdemo.jpg'); */
+}
+
+.hcontent{
+    height: 803px;
+}
+
+.top h1{
+    padding: 4px;
+    text-align:justify;
+    padding-bottom: 7px;
+    font-weight: bold;
+    margin: auto;
+    color:white;
+    font-size: 31px;
+    padding-left: 129px;
+}
+.top p{
+    text-align: justify;
+    /* background-color: rgb(191 255 246); */
+    margin: 5px;
+    font-weight: bold;
+    color: #8fff7b;
+    font-size: 22px;
+    padding-left: 125px;
+}
+
+.navbar{
+    border-radius: 10px;
+    color: rgb(3, 2, 2);
+    padding: 0px 4px;
+    margin-top: 43px;
+    font-size: 19px;
+    overflow: hidden;
+    height: 81px;
+    margin-bottom: 20px;
+}
+.navbar a{
+    letter-spacing: 1px;
+    overflow: auto;
+    color:rgb(223, 255, 44);
+    padding: 24px;
+    /* It vanishes the underline that come on links */
+    text-decoration: none;  
+}
+.navlist{
+    margin: 0px;
+    padding: 4px;
+}
+.navlist li{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid rgb(252, 251, 251);
+    margin-right: 8px;
+    border-radius: 19px;
+}
+
+.navlist li:hover{
+    background-color: #272b2c;
+}
+
+.bckimg #img{
+    background-size: contain;
+    opacity: 20%;
+    margin-top: -619px;
+    width: 100%;
+    height: 640px;
+    background-blend-mode: darken;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
+
+.video{
+    margin-top: -452px;
+    display: inline;
+    margin-left: 744px;
+    position: absolute;
+}
+
+#logo{
+    float: left;
+    width: 118px;
+    height: 105px;
+    padding-left: 2px;
+    background-color: #00dcff;;
+}
+
+.hcontent{
+    background-color: #0f0d0b;
+}
+
+.main h2{
+    float:right;
+}
+
+.notify{
+    float: right;
+    width: 400px;
+    height: 400px;
+    font-size: 20px;
+}
+
+.footer{
+    border: 2px solid orange;
+    margin-bottom: 5px;
+    background-color: black;
+}
+.footer li a,h3{
+    color: white;
+}

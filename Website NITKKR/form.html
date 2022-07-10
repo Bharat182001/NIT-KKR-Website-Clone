@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .container {
+        margin: 10px;
+        border: 2px solid grey;
+        border-radius: 16px;
+        background-color: #f1b3b3;
+        margin-left: 390px;
+        width: 32%;
+      }
+
+      .container h1 {
+        font-size: 40px;
+      }
+
+      .container form {
+        padding-left: 20px;
+      }
+      .bckimg {
+        margin: 10px;
+        border: 2px solid blue;
+        background-color: rgb(49, 47, 47);
+      }
+
+      .img {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 1238px;
+        opacity: 30%;
+        margin-top: -29px;
+      }
+
+      .content img {
+        background-attachment: fixed;
+      }
+
+      p {
+        color: #fafafe;
+        font-size: 27px;
+        font-weight: bold;
+        padding-top: 0px;
+        padding-left: 73px;
+      }
+
+      .form-group {
+        font-weight: bold;
+        margin: 30px;
+        /* position: relative; */
+      }
+
+      #address {
+        margin: 0px 29px;
+      }
+
+      .btn {
+        padding-right: 88px;
+        font-size: 16px;
+        margin: 9px;
+        padding-left: 75px;
+        background-color: #a4d1f1;
+        border-radius: 15px;
+        border: 3px solid black;
+      }
+
+      .submit button:hover {
+        background-color: #5d6164;
+        color: white;
+      }
+
+      .formerror {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bckimg">
+      <p>
+        Those who want admission in NIT Kurukshetra, kindly fill up the form
+        attached below and administration will contact you shortly.
+      </p>
+      <div class="content">
+        <div class="container">
+          <center><h1>Admission Form</h1></center>
+          <form name="admissionform" onsubmit="return ValidateForm()" action="/noaction.php" method="POST">
+            <div class="form-group" id="name">
+              Name:
+              <input
+                type="text"
+                name="fname"
+                placeholder="Enter your Name" required><b><span class="formerror" ></span></b>
+            </div>
+            <div class="form-group" id="age">
+              Age:
+              <input
+                type="number"
+                name="fage"
+                placeholder="Enter your Age"
+                max="25" required><b><span class="formerror"></span></b>
+            </div>
+            <div class="form-group">
+              Choose your gender:
+              <select name="dropdown">
+                <option value="Gender">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="form-group">
+              Field of interest:
+              <input type="text" placeholder="Write your area of interest">
+            </div>
+            <div class="form-group">
+              Address: <br><textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="10"
+                style="height: 40px"
+                placeholder="Enter your address here!"></textarea>
+            </div>
+            <div class="form-group" id="email">
+              Email Id:
+              <input
+                type="email"
+                name="femail"
+                placeholder="Enter your Email Id" required><b><span class="formerror" ></span></b>
+            </div>
+            <div class="form-group" id="mob">
+              Mobile No.
+              <input
+                type="password"
+                name="fmob"
+                placeholder="Enter your Mobile No." required><b><span class="formerror"> </span></b>
+            </div>
+            <div class="submit">
+              <center>
+                <button type="submit" name="submit" class="btn" value="Submit">Submit</button>
+              </center>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="JS/formValidation.js"></script>
+  </body>
+</html>
